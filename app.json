@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Mobile Starter",
+    "slug": "mobile-app-starter",
+    "version": "0.1.0",
+    "scheme": "mobilestarter",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.mobilestarter"
+    },
+    "android": {
+      "package": "com.example.mobilestarter"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-system-ui",
+      ["expo-build-properties", { "ios": { "enableSceneSupport": true } }]
+    ]
+  }
+}

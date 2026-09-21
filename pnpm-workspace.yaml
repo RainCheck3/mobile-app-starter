@@ -1,0 +1,4 @@
+allowBuilds:
+  unrs-resolver: true
+overrides:
+  react-native-worklets: 0.10.1
