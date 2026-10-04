@@ -36,3 +36,7 @@ SDK 57 is the stable baseline at creation (September 2026); SDK 58 is still in p
 Jest with `jest-expo` and React Native Testing Library exercises native-component behavior in Node, replacing the web starter's browser-focused tooling where appropriate. Network tests use mocks and timers. CI exports iOS, Android, and web to catch platform-specific import/bundling problems without store credentials, an emulator, or paid builds. Native compilation and device behavior still need separate verification before release. [Expo testing guide](https://docs.expo.dev/develop/unit-testing/).
 
 The basic quality gate does not call online diagnostics. Run `pnpm doctor` when changing dependencies or configuration; its remote compatibility services can change independently of the lockfile.
+
+## Optional private learning capture
+
+A standard-library Python helper records commit/build/check evidence outside the repository after one-time setup. Shell wrappers preserve command output and exit status, and are inert before setup. Private reflection stays out of public repositories and CI artifacts. Agent notes and weekly reviews connect factual evidence to decisions; no model calls run inside builds or Git hooks.

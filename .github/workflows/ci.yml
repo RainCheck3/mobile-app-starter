@@ -42,3 +42,6 @@ jobs:
 
       - name: Check formatting, lint, types, tests, and platform exports
         run: pnpm check
+
+      - name: Test local learning capture
+        run: python3 -m unittest discover -s scripts/tests -v

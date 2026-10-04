@@ -45,3 +45,7 @@ Use GitHub's **Use this template** once published as a template repository, or c
 Rename `package.json` and the app name, slug, URL scheme, iOS bundle identifier, and Android package in `app.json`. Replace the example screens, README, and app artwork before publishing. Identifiers must be unique to the new product; `com.example.mobilestarter` is a placeholder.
 
 The base has no persistence, auth, payments, analytics, or AI SDK. Connection results live in memory. Start with the smallest useful feature; add backend services and monetization only when the product needs them. [Stack decisions](docs/decisions.md) explain where Python fits.
+
+## Automatic learning capture
+
+Run `python3 scripts/learning.py setup --notebook ../founder-notebook --project my-product` once per clone to connect a private notebook. Commits and `pnpm check` then record engineering evidence automatically. Coding agents also save concise learning notes. See [the learning workflow](docs/learning.md) for setup, privacy, deployment integration, and weekly reviews.

@@ -9,15 +9,18 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "expo export --platform all",
+    "build": "sh scripts/with-learning.sh build expo export --platform all",
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit",
     "test": "jest --ci --runInBand",
     "test:watch": "jest --watch",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build",
-    "doctor": "expo-doctor"
+    "check": "sh scripts/with-learning.sh check pnpm check:steps",
+    "doctor": "expo-doctor",
+    "check:steps": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "learn:setup": "python3 scripts/learning.py setup",
+    "test:learning": "python3 -m unittest discover -s scripts/tests -v"
   },
   "dependencies": {
     "@expo/metro-runtime": "~57.0.16",

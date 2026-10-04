@@ -66,3 +66,7 @@ Native fetch does not use browser CORS. The web preview does: in your backend pr
 `app/*.tsx` defines screens; `components/` holds reusable UI. React state (`useState`) drives rerendering. `async` functions return promises; use `await` and `try/catch` much like async Python. TypeScript types help at development time but do not validate network JSON: `lib/health.ts` demonstrates the runtime check at the boundary.
 
 Keep business rules, database access, expensive jobs, AI provider calls, and billing verification in Python. The mobile client handles presentation, device APIs, and user input. When the API grows beyond a few endpoints, consider generating TypeScript contracts from FastAPI's OpenAPI schema.
+
+## Learning setup
+
+For each new project, complete the one-time [learning setup](learning.md) before starting work. Keep the notebook outside the product repository.
